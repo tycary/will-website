@@ -19,7 +19,7 @@ function HeroSection() {
         minHeight: '90vh',
         display: 'flex',
         alignItems: 'center',
-        background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%)',
+        background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #252525 100%)',
         position: 'relative',
         overflow: 'hidden',
         '&::before': {
@@ -29,7 +29,7 @@ function HeroSection() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'radial-gradient(circle at 30% 20%, rgba(0, 212, 170, 0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%)',
+          background: 'radial-gradient(circle at 30% 20%, rgba(197, 48, 48, 0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(139, 149, 156, 0.1) 0%, transparent 50%)',
           zIndex: 1,
         },
       }}
@@ -84,10 +84,10 @@ function HeroSection() {
                     height: 280,
                     mx: 'auto',
                     mb: 2,
-                    background: 'linear-gradient(45deg, #00d4aa, #ff6b6b)',
+                    background: 'linear-gradient(45deg, #c53030, #8b959c)',
                     fontSize: '4rem',
                     fontWeight: 700,
-                    boxShadow: '0px 12px 40px rgba(0, 212, 170, 0.3)',
+                    boxShadow: '0px 12px 40px rgba(197, 48, 48, 0.3)',
                   }}
                 >
                   WC
@@ -116,7 +116,7 @@ function HeroSection() {
           },
         }}
       >
-        <KeyboardArrowDown sx={{ fontSize: 40, color: 'primary.main', opacity: 0.7 }} />
+        <KeyboardArrowDown sx={{ fontSize: 40, color: 'primary.main', opacity: 0.8 }} />
       </Box>
     </Box>
   );
@@ -359,7 +359,7 @@ function About() {
     { year: '2024', title: 'Senior Year Projects', description: 'Leading capstone project in autonomous robotics' },
     { year: '2023', title: 'Internship at TechCorp', description: 'Developed automated testing systems' },
     { year: '2022', title: 'Research Assistant', description: 'Contributed to renewable energy research' },
-    { year: '2021', title: 'Started Engineering', description: 'Began studies at University' },
+    { year: '2021', title: 'Started Engineering', description: 'Began studies at Washington State University' },
   ];
 
   return (
@@ -376,14 +376,14 @@ function About() {
       <Grid container spacing={6}>
         {/* Introduction */}
         <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 4, height: '100%', background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' }}>
+          <Paper sx={{ p: 4, height: '100%', background: 'linear-gradient(135deg, #1a1a1a 0%, #252525 100%)' }}>
             <Typography variant="h4" gutterBottom sx={{ color: 'primary.main', fontWeight: 600 }}>
               Hello, I'm Will! 👋
             </Typography>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
-              I'm currently pursuing my degree in Mechanical Engineering, with a passion for robotics, 
-              automation, and sustainable design solutions. My journey combines academic excellence with 
-              hands-on experience in cutting-edge engineering projects.
+              I'm currently pursuing my degree in Mechanical Engineering at Washington State University, 
+              with a passion for robotics, automation, and sustainable design solutions. My journey combines 
+              academic excellence with hands-on experience in cutting-edge engineering projects.
             </Typography>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
               When I'm not designing mechanical systems or coding control algorithms, you'll find me 
@@ -476,7 +476,7 @@ function Contact() {
       <Grid container spacing={6}>
         {/* Contact Form */}
         <Grid item xs={12} md={8}>
-          <Paper sx={{ p: 4, background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' }}>
+          <Paper sx={{ p: 4, background: 'linear-gradient(135deg, #1a1a1a 0%, #252525 100%)' }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
               Send a Message
             </Typography>
@@ -488,12 +488,6 @@ function Contact() {
                     variant="outlined" 
                     required 
                     fullWidth
-                    sx={{ 
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
-                        '&:hover fieldset': { borderColor: 'primary.main' },
-                      }
-                    }}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -502,12 +496,6 @@ function Contact() {
                     variant="outlined" 
                     required 
                     fullWidth
-                    sx={{ 
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
-                        '&:hover fieldset': { borderColor: 'primary.main' },
-                      }
-                    }}
                   />
                 </Grid>
               </Grid>
@@ -517,24 +505,12 @@ function Contact() {
                 required 
                 type="email" 
                 fullWidth
-                sx={{ 
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
-                    '&:hover fieldset': { borderColor: 'primary.main' },
-                  }
-                }}
               />
               <TextField 
                 label="Subject" 
                 variant="outlined" 
                 required 
                 fullWidth
-                sx={{ 
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
-                    '&:hover fieldset': { borderColor: 'primary.main' },
-                  }
-                }}
               />
               <TextField 
                 label="Message" 
@@ -543,12 +519,6 @@ function Contact() {
                 multiline 
                 rows={5} 
                 fullWidth
-                sx={{ 
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
-                    '&:hover fieldset': { borderColor: 'primary.main' },
-                  }
-                }}
               />
               <Button 
                 variant="contained" 
@@ -741,8 +711,8 @@ function Footer() {
               Will Cary
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ mb: 2, maxWidth: 400 }}>
-              Mechanical Engineering Student passionate about robotics, sustainable design, 
-              and innovative solutions for tomorrow's challenges.
+              Washington State University Mechanical Engineering Student passionate about robotics, 
+              sustainable design, and innovative solutions for tomorrow's challenges.
             </Typography>
             <Box sx={{ display: 'flex', gap: 1 }}>
               <IconButton
@@ -796,7 +766,7 @@ function Footer() {
               📧 will.cary@example.com
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              📍 University Campus
+              📍 Pullman, WA
             </Typography>
             <Typography variant="body2" color="text.secondary">
               🎓 Mechanical Engineering Student

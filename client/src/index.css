@@ -6,8 +6,8 @@
   font-weight: 400;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0a0a0a;
+  color: rgba(245, 245, 245, 0.95);
+  background-color: #0f0f0f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,7 +27,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #252525 100%);
   background-attachment: fixed;
 }
 
@@ -46,32 +46,32 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #00d4aa, #ff6b6b);
+  background: linear-gradient(45deg, #c53030, #5e6a71);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #00a685, #f44336);
+  background: linear-gradient(45deg, #981e32, #414a4f);
 }
 
 a {
   font-weight: 500;
-  color: #00d4aa;
+  color: #c53030;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #ff6b6b;
+  color: #8b959c;
 }
 
 /* Selection styles */
 ::selection {
-  background: rgba(0, 212, 170, 0.3);
+  background: rgba(197, 48, 48, 0.3);
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background: rgba(0, 212, 170, 0.3);
+  background: rgba(197, 48, 48, 0.3);
   color: #ffffff;
 }
 
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .gradient-text {
-  background: linear-gradient(-45deg, #00d4aa, #ff6b6b, #00d4aa, #ff6b6b);
+  background: linear-gradient(-45deg, #c53030, #8b959c, #c53030, #8b959c);
   background-size: 400% 400%;
   animation: gradientShift 4s ease infinite;
   -webkit-background-clip: text;
@@ -149,18 +149,18 @@ a:hover {
 
 /* Glow effect */
 .glow {
-  box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+  box-shadow: 0 0 20px rgba(197, 48, 48, 0.3);
   transition: box-shadow 0.3s ease;
 }
 
 .glow:hover {
-  box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+  box-shadow: 0 0 30px rgba(197, 48, 48, 0.5);
 }
 
 /* Focus visible styles for accessibility */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #00d4aa;
+  outline: 2px solid #c53030;
   outline-offset: 2px;
 }
 
