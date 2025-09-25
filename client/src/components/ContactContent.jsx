@@ -76,8 +76,8 @@ const ContactInfo = () => {
   ];
 
   const socialLinks = [
-    { icon: <GitHub />, href: 'https://github.com/willcary' },
-    { icon: <LinkedIn />, href: 'https://linkedin.com/in/willcary' }
+    { icon: <GitHub />, href: 'https://github.com/williamhogg' },
+    { icon: <LinkedIn />, href: 'https://linkedin.com/in/will-hogg' }
   ];
 
   return (
@@ -89,9 +89,9 @@ const ContactInfo = () => {
           Email Me
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-          will.cary@example.com
+          WilliamWHogg@gmail.com
         </Typography>
-        <Button variant="outlined" size="small" href="mailto:will.cary@example.com">
+        <Button variant="outlined" size="small" href="mailto:WilliamWHogg@gmail.com">
           Send Email
         </Button>
       </Paper>
@@ -129,7 +129,7 @@ const ContactInfo = () => {
           sx={{ mb: 2 }}
         />
         <Typography variant="body2" color="text.secondary">
-          Available for internships, co-ops, and collaborative projects starting Summer 2025.
+          Available for full-time opportunities in materials research, additive manufacturing, and biomedical engineering.
         </Typography>
       </Paper>
     </Box>

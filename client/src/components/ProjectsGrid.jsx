@@ -113,50 +113,50 @@ const ProjectCard = ({ project, index }) => {
 const ProjectsGrid = () => {
   const projectList = [
     {
-      title: 'Autonomous Robotic Arm',
-      description: 'A 6-DOF robotic arm with computer vision capabilities, featuring custom 3D-printed components and advanced motion planning algorithms.',
-      technologies: ['Arduino', 'Python', 'OpenCV', '3D Printing'],
+      title: 'Ti6Al4V Fatigue Research',
+      description: 'Comprehensive study on corrosion fatigue behavior of additively manufactured Ti6Al4V alloys, focusing on biomedical applications and surface treatments.',
+      technologies: ['MATLAB', 'Materials Testing', 'Statistical Analysis', 'SEM Microscopy'],
       status: 'Completed',
       link: '#',
       github: '#',
     },
     {
-      title: 'Smart Wind Turbine System',
-      description: 'IoT-enabled wind turbine with real-time monitoring, featuring optimized blade design and predictive maintenance capabilities.',
-      technologies: ['SolidWorks', 'IoT', 'Data Analytics', 'CFD'],
-      status: 'In Progress',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Sustainable Transport Pod',
-      description: 'Electric vehicle prototype designed for urban mobility, featuring lightweight composite materials and regenerative braking.',
-      technologies: ['Fusion 360', 'ANSYS', 'Composites', 'Electronics'],
-      status: 'Design Phase',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Biomechanical Prosthetic',
-      description: 'Advanced prosthetic limb with myoelectric control and haptic feedback, designed for enhanced user experience.',
-      technologies: ['Bioengineering', 'Electronics', 'Materials', 'UX'],
-      status: 'Research',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Manufacturing Automation',
-      description: 'Automated assembly line system with quality control integration and real-time production monitoring.',
-      technologies: ['PLC', 'HMI', 'Sensors', 'Database'],
+      title: 'Biomedical Materials Lab Research',
+      description: 'Development of novel testing protocols for additively manufactured biomaterials, including batch Bayesian optimization and automated analysis systems.',
+      technologies: ['Python', 'MATLAB', 'L-PBF', 'Fatigue Testing'],
       status: 'Completed',
       link: '#',
       github: '#',
     },
     {
-      title: 'Energy Storage System',
-      description: 'Innovative battery management system for renewable energy applications with advanced thermal management.',
-      technologies: ['Battery Tech', 'Thermal Analysis', 'Control Systems'],
-      status: 'Prototype',
+      title: 'Titanium SPF Manufacturing',
+      description: 'Root cause analysis and process optimization for titanium superplastic forming, preventing repeat failures and reducing tool wear.',
+      technologies: ['Manufacturing Analysis', 'Process Optimization', 'Quality Control'],
+      status: 'Completed',
+      link: '#',
+      github: '#',
+    },
+    {
+      title: 'Roller Seam Welding Tool',
+      description: 'Designed and implemented ergonomic tool for 90 lb part roller seam welding operations, improving safety and operator efficiency.',
+      technologies: ['Mechanical Design', 'Ergonomics', 'Manufacturing'],
+      status: 'Completed',
+      link: '#',
+      github: '#',
+    },
+    {
+      title: 'Eagle Scout Leadership Project',
+      description: 'Organized and led 150+ hour community project during COVID-19, demonstrating project management and leadership skills.',
+      technologies: ['Project Management', 'Leadership', 'Community Organization'],
+      status: 'Completed',
+      link: '#',
+      github: '#',
+    },
+    {
+      title: 'Research Publications',
+      description: 'Published research on fatigue behavior of additively manufactured alloys and earned multiple certifications in SOLIDWORKS and materials science.',
+      technologies: ['Technical Writing', 'Research', 'Academic Publication'],
+      status: 'Completed',
       link: '#',
       github: '#',
     },
@@ -169,7 +169,7 @@ const ProjectsGrid = () => {
           Featured Projects
         </Typography>
         <Typography variant="h5" color="text.secondary" sx={{ mb: 4, maxWidth: '800px', mx: 'auto' }}>
-          A showcase of innovative engineering solutions, from robotics and automation to sustainable design and beyond.
+          Research projects and professional experience in additive manufacturing, biomechanical materials, and advanced manufacturing processes.
         </Typography>
       </Box>
       

@@ -8,10 +8,10 @@ import {
 
 const SkillsSection = () => {
   const skills = [
-    { category: 'CAD & Design', items: ['SolidWorks', 'Fusion 360', 'AutoCAD', 'KeyShot'], icon: <Engineering /> },
-    { category: 'Programming', items: ['Python', 'MATLAB', 'C++', 'JavaScript'], icon: <Code /> },
-    { category: 'Manufacturing', items: ['3D Printing', 'CNC Machining', 'Welding', 'Assembly'], icon: <Build /> },
-    { category: 'Analysis', items: ['ANSYS', 'SolidWorks Simulation', 'CFD', 'FEA'], icon: <School /> },
+    { category: 'Design & Simulation', items: ['SOLIDWORKS', 'MATLAB/Simulink', 'GDST', 'Fusion 360'], icon: <Engineering /> },
+    { category: 'Manufacturing', items: ['3D Printing (FDM, SLA, L-PBF)', 'CNC Machining', 'Water Jet', '2D Laser'], icon: <Build /> },
+    { category: 'Materials & Testing', items: ['Fatigue Testing', 'Tension/Compression', 'Hardness Testing', 'Optical/SEM Microscopy'], icon: <School /> },
+    { category: 'Programming & Software', items: ['Python', 'MATLAB', 'Siemens NX', 'Meshmixer', 'C', 'Arduino'], icon: <Code /> },
   ];
 
   return (
@@ -47,10 +47,10 @@ const SkillsSection = () => {
 
 const Timeline = () => {
   const timeline = [
-    { year: '2024', title: 'Senior Year Projects', description: 'Leading capstone project in autonomous robotics' },
-    { year: '2023', title: 'Internship at TechCorp', description: 'Developed automated testing systems' },
-    { year: '2022', title: 'Research Assistant', description: 'Contributed to renewable energy research' },
-    { year: '2021', title: 'Started Engineering', description: 'Began studies at Washington State University' },
+    { year: '2026', title: 'M.S. Mechanical Engineering', description: 'Completed graduate degree at Washington State University, GPA: 4.0' },
+    { year: '2025', title: 'B.S. Mechanical Engineering', description: 'Completed undergraduate degree at Washington State University, GPA: 4.0' },
+    { year: '2023-25', title: 'Research Assistant', description: 'W.M. Keck Biomedical Materials Lab - Additive manufacturing research' },
+    { year: '2022', title: 'Project Engineer Intern', description: 'Exotic Metals Forming Internship - Manufacturing process optimization' },
   ];
 
   return (
@@ -84,7 +84,7 @@ const AboutContent = () => {
           About Me
         </Typography>
         <Typography variant="h5" color="text.secondary" sx={{ maxWidth: '800px', mx: 'auto' }}>
-          Passionate mechanical engineering student dedicated to innovation and sustainable design
+          Mechanical engineering graduate specializing in additive manufacturing and biomechanical materials research
         </Typography>
       </Box>
 
@@ -93,21 +93,21 @@ const AboutContent = () => {
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 4, height: '100%', background: 'linear-gradient(135deg, #1a1a1a 0%, #252525 100%)' }}>
             <Typography variant="h4" gutterBottom sx={{ color: 'primary.main', fontWeight: 600 }}>
-              Hello, I'm Will! 👋
+              Hello, I'm William! 👋
             </Typography>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
-              I'm currently pursuing my degree in Mechanical Engineering at Washington State University, 
-              with a passion for robotics, automation, and sustainable design solutions. My journey combines 
-              academic excellence with hands-on experience in cutting-edge engineering projects.
+              I recently completed my M.S. in Mechanical Engineering at Washington State University with a 4.0 GPA, 
+              specializing in additive manufacturing and biomechanical materials research. My work focuses on 
+              characterizing and optimizing novel additively manufactured alloys for biomedical applications.
             </Typography>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
-              When I'm not designing mechanical systems or coding control algorithms, you'll find me 
-              exploring the outdoors, capturing moments through photography, or tinkering with new 
-              technologies in my home workshop.
+              As a Research Assistant at the W.M. Keck Biomedical Materials Lab, I've contributed to groundbreaking 
+              research on Ti6Al4V alloys, developed innovative testing protocols, and published research on fatigue 
+              behavior of additively manufactured materials.
             </Typography>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-              I believe in the power of engineering to solve real-world problems and create a more 
-              sustainable future for everyone.
+              I'm passionate about bridging the gap between advanced manufacturing technologies and practical 
+              applications in medical devices and engineering solutions that improve people's lives.
             </Typography>
           </Paper>
         </Grid>

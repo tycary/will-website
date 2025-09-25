@@ -10,20 +10,20 @@ const FeatureCards = () => {
   const features = [
     {
       icon: <Engineering sx={{ fontSize: 60, color: 'primary.main', mb: 2 }} />,
-      title: 'Engineering Excellence',
-      description: 'Combining theoretical knowledge with practical application to solve complex engineering challenges.',
+      title: 'Research Excellence',
+      description: 'Published researcher in additive manufacturing and biomechanical materials with 4.0 GPA in graduate studies.',
       delay: 1000
     },
     {
       icon: <Rocket sx={{ fontSize: 60, color: 'secondary.main', mb: 2 }} />,
-      title: 'Innovation Focus',
-      description: 'Passionate about pushing boundaries and developing cutting-edge solutions for tomorrow\'s world.',
+      title: 'Advanced Manufacturing',
+      description: 'Expert in additive manufacturing processes, materials characterization, and novel alloy development.',
       delay: 1200
     },
     {
       icon: <Star sx={{ fontSize: 60, color: 'warning.main', mb: 2 }} />,
-      title: 'Quality Driven',
-      description: 'Committed to delivering exceptional results through attention to detail and continuous improvement.',
+      title: 'Problem Solving',
+      description: 'Proven track record of solving complex manufacturing challenges and optimizing industrial processes.',
       delay: 1400
     }
   ];

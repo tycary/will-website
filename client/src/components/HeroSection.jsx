@@ -38,14 +38,14 @@ const HeroSection = () => {
                   👋 Hello, I'm
                 </Typography>
                 <Typography variant="h1" sx={{ mb: 3, fontWeight: 700 }}>
-                  Will Cary
+                  William Hogg
                 </Typography>
                 <Typography variant="h4" color="text.secondary" sx={{ mb: 3, fontWeight: 400 }}>
-                  Mechanical Engineering Student & Innovator
+                  Mechanical Engineering Graduate & Research Specialist
                 </Typography>
                 <Typography variant="h6" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8, maxWidth: '600px' }}>
-                  Passionate about robotics, sustainable design, and bringing innovative ideas to life through 
-                  engineering excellence and creative problem-solving.
+                  Specialized in additive manufacturing, biomechanical materials research, and innovative 
+                  manufacturing processes. Passionate about developing solutions for medical and industrial applications.
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                   <Button 
@@ -85,12 +85,12 @@ const HeroSection = () => {
                     boxShadow: '0px 12px 40px rgba(197, 48, 48, 0.3)',
                   }}
                 >
-                  WC
+                  WH
                 </Avatar>
                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, flexWrap: 'wrap' }}>
-                  <Chip icon={<Engineering />} label="Robotics" color="primary" variant="outlined" />
-                  <Chip icon={<Code />} label="CAD Design" color="secondary" variant="outlined" />
-                  <Chip icon={<Build />} label="Prototyping" color="primary" variant="outlined" />
+                  <Chip icon={<Engineering />} label="Additive Manufacturing" color="primary" variant="outlined" />
+                  <Chip icon={<Code />} label="Materials Research" color="secondary" variant="outlined" />
+                  <Chip icon={<Build />} label="Biomechanical Design" color="primary" variant="outlined" />
                 </Box>
               </Box>
             </Grid>
