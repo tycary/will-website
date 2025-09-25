@@ -3,7 +3,7 @@ import {
   Container, Box, Grid, Typography, Paper, Card, Chip, Fade
 } from '@mui/material';
 import {
-  Engineering, Code, Build, School
+  Engineering, Code, Build, School, Science, EmojiEvents
 } from '@mui/icons-material';
 
 const SkillsSection = () => {
@@ -126,6 +126,51 @@ const AboutContent = () => {
             My Journey
           </Typography>
           <Timeline />
+        </Grid>
+
+        {/* Project Highlights */}
+        <Grid item xs={12}>
+          <Typography variant="h4" gutterBottom sx={{ fontWeight: 600, mb: 4, textAlign: 'center' }}>
+            Key Achievements
+          </Typography>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={4}>
+              <Paper sx={{ p: 3, textAlign: 'center', height: '100%' }}>
+                <Engineering sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
+                <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
+                  Innovative Projects
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  String Art Printer with 3-way pick and place mechanism, Marble Display Machine with LED integration, 
+                  and precision Linear Actuator systems
+                </Typography>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Paper sx={{ p: 3, textAlign: 'center', height: '100%' }}>
+                <Science sx={{ fontSize: 48, color: 'secondary.main', mb: 2 }} />
+                <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
+                  Research Impact
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  5X speed improvement in analysis automation, published research on Ti6Al4V fatigue behavior, 
+                  and novel protocols for additive manufacturing
+                </Typography>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Paper sx={{ p: 3, textAlign: 'center', height: '100%' }}>
+                <EmojiEvents sx={{ fontSize: 48, color: 'warning.main', mb: 2 }} />
+                <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
+                  Recognition
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  VCFA Outstanding Junior in Mechanical Engineering, Barry Goldwater Scholarship Nominee, 
+                  SOLIDWORKS certifications, and Eagle Scout achievement
+                </Typography>
+              </Paper>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Container>

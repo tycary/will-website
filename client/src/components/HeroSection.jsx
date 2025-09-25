@@ -41,11 +41,11 @@ const HeroSection = () => {
                   William Hogg
                 </Typography>
                 <Typography variant="h4" color="text.secondary" sx={{ mb: 3, fontWeight: 400 }}>
-                  Mechanical Engineering Graduate & Research Specialist
+                  Mechanical Engineer & Creative Problem Solver
                 </Typography>
                 <Typography variant="h6" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8, maxWidth: '600px' }}>
-                  Specialized in additive manufacturing, biomechanical materials research, and innovative 
-                  manufacturing processes. Passionate about developing solutions for medical and industrial applications.
+                  From kinetic art machines and precision actuators to biomedical research and manufacturing optimization. 
+                  I bridge the gap between innovative engineering and practical solutions that make a difference.
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                   <Button 
