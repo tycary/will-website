@@ -1,30 +1,39 @@
-# Project Images Folder
+# Project Images Structure
 
-This folder contains all images for the projects displayed on the website.
+This folder contains all images for the projects displayed on the website, now organized by project folders.
+
+## New Folder Structure
+
+Each project now has its own folder:
+- `string-art-printer/` - String Art Printer project images
+- `linear-actuator-system/` - Linear Actuator System images
+- `marble-display-machine/` - Marble Display Machine images
+- `biomedical-materials-research/` - Biomedical Materials Lab Research images
+- `ti6al4v-fatigue-research/` - Ti6Al4V Fatigue Research images
+- `advanced-manufacturing-systems/` - Advanced Manufacturing Systems images
 
 ## File Naming Convention
 
-- Use the exact filename specified in the `projects.json` file
-- Use lowercase letters and hyphens for spaces (e.g., `string-art-printer.jpg`)
+### Within each project folder:
+- `main.jpg` - Primary thumbnail image (shown on the main grid)
+- Additional images with descriptive names:
+  - `mechanism.jpg`, `process.jpg`, `result.jpg`
+  - `assembly.jpg`, `components.jpg`, `testing.jpg`
+  - `setup.jpg`, `analysis.jpg`, `specimens.jpg`
+
+### Image Requirements:
 - Supported formats: `.jpg`, `.jpeg`, `.png`, `.webp`
 - Recommended size: 800x600 pixels or similar aspect ratio
 - Keep file sizes under 2MB for optimal loading
 
-## Current Project Images
+## How Images Work:
 
-- `string-art-printer.jpg` - String Art Printer project
-- `linear-actuator.jpg` - Linear Actuator System
-- `marble-display.jpg` - Marble Display Machine
-- `biomedical-research.jpg` - Biomedical Materials Lab Research
-- `titanium-research.jpg` - Ti6Al4V Fatigue Research
-- `manufacturing-systems.jpg` - Advanced Manufacturing Systems
+1. **Thumbnail**: The first image in the `images` array (usually `main.jpg`) is shown as the card thumbnail
+2. **Slideshow**: When a project card is expanded, users can navigate through all images
+3. **Order**: Images are displayed in the order specified in the JSON file's `images` array
 
-## Adding New Images
+## Adding New Projects:
 
-1. Save your image file in this folder
-2. Use the exact filename you specify in the `projects.json` file
-3. The image will automatically appear on the website
-
-## Placeholder Images
-
-If no image is provided, a default engineering icon will be displayed instead.
+1. Create a new folder with your project's folder name (use hyphens, lowercase)
+2. Add images to that folder following the naming convention
+3. Update the `projects.json` file with the folder name and image list

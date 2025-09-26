@@ -2,23 +2,28 @@
 
 This guide will help you easily add new projects to William's website without any coding knowledge.
 
-## Step 1: Prepare Your Project Image
+## Step 1: Prepare Your Project Images
 
-1. **Get your project image ready**
+1. **Create a project folder**
+   - Each project now has its own folder for images
+   - Choose a folder name: lowercase letters with hyphens (e.g., `my-awesome-robot`)
+   - Create this folder in: `client/src/assets/projects/[your-folder-name]/`
+
+2. **Prepare multiple images**
+   - **Main image**: This will be the thumbnail (name it `main.jpg`)
+   - **Additional images**: Process photos, results, close-ups, etc.
    - Recommended size: 800x600 pixels (or similar rectangular shape)
    - Supported formats: `.jpg`, `.jpeg`, `.png`, `.webp`
-   - Keep file size under 2MB for fast loading
-   - Choose a clear, high-quality image that represents your project well
+   - Keep file sizes under 2MB for fast loading
 
-2. **Name your image file**
-   - Use lowercase letters only
-   - Replace spaces with hyphens (-)
-   - Example: `my-new-project.jpg` or `robotics-arm-2024.png`
-   - **Remember this filename** - you'll need it in Step 3!
+3. **Name your image files**
+   - Use descriptive names: `main.jpg`, `process.jpg`, `assembly.jpg`, `result.jpg`
+   - Use lowercase letters and hyphens only
+   - The first image in your list will be the thumbnail
 
-3. **Save the image**
-   - Put your image file in: `client/src/assets/projects/`
-   - This is the same folder where you'll find other project images
+4. **Add images to your project folder**
+   - Put all images in: `client/src/assets/projects/[your-folder-name]/`
+   - Example: `client/src/assets/projects/my-awesome-robot/main.jpg`
 
 ## Step 2: Edit the Projects File
 
@@ -44,15 +49,25 @@ This guide will help you easily add new projects to William's website without an
     {
       "id": 999,
       "title": "Your Project Title Here",
-      "description": "Write a detailed description of your project. Explain what it does, what problems it solves, and what makes it interesting or innovative.",
+      "description": "Brief description that appears on the project card (2-3 sentences).",
+      "detailedDescription": "Detailed description that appears when the card is expanded. Explain the project in depth, including technical details, innovations, and significance.",
       "technologies": ["Technology 1", "Technology 2", "Technology 3", "Add more as needed"],
       "status": "In Progress",
-      "image": "your-image-filename.jpg",
+      "images": ["main.jpg", "process.jpg", "assembly.jpg", "result.jpg"],
+      "folder": "your-project-folder-name",
       "link": "#",
       "github": "#",
       "featured": true,
       "completedDate": null,
-      "category": "Choose a category"
+      "category": "Choose a category",
+      "challenges": [
+        "Challenge 1 you faced during the project",
+        "Challenge 2 and how you approached it"
+      ],
+      "outcomes": [
+        "Key outcome or achievement 1",
+        "Important result or metric 2"
+      ]
     }
 ```
 
@@ -62,15 +77,19 @@ Replace the placeholder text with your actual project information:
 
 - **id**: Use a unique number (higher than existing projects)
 - **title**: Your project's name
-- **description**: Detailed explanation of what your project does
+- **description**: Brief description for the card (2-3 sentences)
+- **detailedDescription**: Detailed explanation that shows when expanded
 - **technologies**: List of technologies/tools used (in quotes, separated by commas)
 - **status**: Choose from: "Planning", "Design Phase", "In Progress", "Testing", "Completed", "Published"
-- **image**: The exact filename you used in Step 1
+- **images**: Array of image filenames in your project folder (first one is the thumbnail)
+- **folder**: The exact folder name you created in Step 1
 - **link**: Web link to your project (use "#" if none)
 - **github**: GitHub link (use "#" if none)
 - **featured**: Set to `true` to show on main page, `false` to hide
 - **completedDate**: Date completed in "YYYY-MM-DD" format, or `null` if not completed
 - **category**: Choose from: "Kinetic Art", "Mechanical Systems", "Research", "Manufacturing", "Software", "Biomedical"
+- **challenges**: Array of challenges you faced (optional)
+- **outcomes**: Array of key results and achievements (optional)
 
 ## Example: Adding a New Project
 
@@ -80,15 +99,27 @@ Here's a complete example of adding a new robotics project:
     {
       "id": 7,
       "title": "Robotic Arm Controller",
-      "description": "A 6-axis robotic arm designed for precision assembly tasks. Features custom servo controllers, computer vision integration, and a user-friendly interface for programming complex movements.",
+      "description": "A 6-axis robotic arm designed for precision assembly tasks with computer vision integration.",
+      "detailedDescription": "This project features a custom-designed 6-axis robotic arm with precision servo controllers, computer vision integration for object recognition, and an intuitive user interface for programming complex movement sequences. The arm achieves sub-millimeter accuracy and can perform delicate assembly operations.",
       "technologies": ["Robotics", "Computer Vision", "Arduino", "Python", "3D Printing"],
       "status": "Completed",
-      "image": "robotic-arm-controller.jpg",
+      "images": ["main.jpg", "assembly.jpg", "control-interface.jpg", "vision-system.jpg"],
+      "folder": "robotic-arm-controller",
       "link": "https://myproject.com",
       "github": "https://github.com/myusername/robotic-arm",
       "featured": true,
       "completedDate": "2024-06-15",
-      "category": "Mechanical Systems"
+      "category": "Mechanical Systems",
+      "challenges": [
+        "Achieving sub-millimeter positioning accuracy",
+        "Integrating computer vision with real-time control",
+        "Designing intuitive programming interface"
+      ],
+      "outcomes": [
+        "Successfully assembled 100+ precision components",
+        "Achieved 99.8% positioning accuracy",
+        "Reduced assembly time by 60% compared to manual methods"
+      ]
     }
 ```
 

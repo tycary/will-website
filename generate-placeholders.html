@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Placeholder Images</title>
+</head>
+<body>
+    <h2>Placeholder Image Generator</h2>
+    <p>Right-click on each image below and "Save As" to your project folders:</p>
+    
+    <h3>String Art Printer Images:</h3>
+    <canvas id="string-main" width="800" height="600"></canvas><br>
+    <small>Save as: main.jpg</small><br><br>
+    
+    <canvas id="string-mechanism" width="800" height="600"></canvas><br>
+    <small>Save as: mechanism.jpg</small><br><br>
+    
+    <canvas id="string-process" width="800" height="600"></canvas><br>
+    <small>Save as: process.jpg</small><br><br>
+    
+    <canvas id="string-result" width="800" height="600"></canvas><br>
+    <small>Save as: result.jpg</small><br><br>
+
+    <script>
+        function createPlaceholder(canvasId, title, color, textColor = 'white') {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Fill background
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, 800, 600);
+            
+            // Add title text
+            ctx.fillStyle = textColor;
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(title, 400, 280);
+            
+            // Add subtitle
+            ctx.font = '24px Arial';
+            ctx.fillText('Placeholder Image', 400, 320);
+            ctx.fillText('Replace with actual project photo', 400, 350);
+        }
+        
+        // Generate placeholder images
+        createPlaceholder('string-main', 'String Art Printer', '#c53030');
+        createPlaceholder('string-mechanism', 'Mechanism Detail', '#3182ce');
+        createPlaceholder('string-process', 'Process in Action', '#38a169');
+        createPlaceholder('string-result', 'Final Result', '#d69e2e');
+    </script>
+</body>
+</html>

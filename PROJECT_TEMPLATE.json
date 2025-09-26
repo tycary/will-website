@@ -1,13 +1,25 @@
 {
   "id": 999,
   "title": "Your Project Title Here",
-  "description": "Write a detailed description of your project. Explain what it does, what problems it solves, and what makes it interesting or innovative.",
+  "description": "Brief description that appears on the card (2-3 sentences).",
+  "detailedDescription": "Detailed description that appears when expanded. Explain the project in depth, including technical details, innovations, and significance.",
   "technologies": ["Technology 1", "Technology 2", "Technology 3", "Add more as needed"],
   "status": "In Progress",
-  "image": "your-image-filename.jpg",
+  "images": ["main.jpg", "process.jpg", "result.jpg"],
+  "folder": "your-project-folder-name",
   "link": "#",
   "github": "#",
   "featured": true,
   "completedDate": null,
-  "category": "Choose a category"
+  "category": "Choose a category",
+  "challenges": [
+    "Challenge 1 you faced during the project",
+    "Challenge 2 and how you approached it",
+    "Challenge 3 that required innovative solutions"
+  ],
+  "outcomes": [
+    "Key outcome or achievement 1",
+    "Important result or metric 2",
+    "Impact or success measure 3"
+  ]
 }
