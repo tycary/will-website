@@ -1,12 +1,13 @@
 import React from 'react';
 import {
   Container, Box, Grid, Typography, Card, CardContent, CardActions, 
-  Button, Chip, Fade, IconButton
+  Button, Chip, Fade, IconButton, CardMedia
 } from '@mui/material';
 import {
   Engineering, Launch, GitHub
 } from '@mui/icons-material';
 import theme from '../theme';
+import projectsData from '../data/projects.json';
 
 const ProjectCard = ({ project, index }) => {
   const getStatusColor = (status) => {
@@ -16,9 +17,23 @@ const ProjectCard = ({ project, index }) => {
       case 'Design Phase': return 'warning';
       case 'Research': return 'info';
       case 'Prototype': return 'secondary';
+      case 'Testing': return 'warning';
+      case 'Planning': return 'info';
+      case 'Published': return 'success';
       default: return 'default';
     }
   };
+
+  // Try to import the image, fallback to null if not found
+  const getProjectImage = (imageName) => {
+    try {
+      return require(`../assets/projects/${imageName}`);
+    } catch (error) {
+      return null;
+    }
+  };
+
+  const projectImage = getProjectImage(project.image);
 
   return (
     <Grid item xs={12} md={6} lg={4}>
@@ -41,25 +56,35 @@ const ProjectCard = ({ project, index }) => {
             }
           }}
         >
-          <Box
-            sx={{
-              height: 200,
-              background: `linear-gradient(135deg, ${theme.palette.primary.main}22, ${theme.palette.secondary.main}22)`,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              position: 'relative',
-              overflow: 'hidden',
-            }}
-          >
-            <Engineering sx={{ fontSize: 80, color: 'primary.main', opacity: 0.3 }} />
-            <Chip 
-              label={project.status}
-              color={getStatusColor(project.status)}
-              size="small"
-              sx={{ position: 'absolute', top: 12, right: 12 }}
+          {projectImage ? (
+            <CardMedia
+              component="img"
+              height="200"
+              image={projectImage}
+              alt={project.title}
+              sx={{ objectFit: 'cover' }}
             />
-          </Box>
+          ) : (
+            <Box
+              sx={{
+                height: 200,
+                background: `linear-gradient(135deg, ${theme.palette.primary.main}22, ${theme.palette.secondary.main}22)`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
+              <Engineering sx={{ fontSize: 80, color: 'primary.main', opacity: 0.3 }} />
+            </Box>
+          )}
+          <Chip 
+            label={project.status}
+            color={getStatusColor(project.status)}
+            size="small"
+            sx={{ position: 'absolute', top: 12, right: 12, zIndex: 1 }}
+          />
           
           <CardContent sx={{ flexGrow: 1, p: 3 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>
@@ -111,56 +136,8 @@ const ProjectCard = ({ project, index }) => {
 };
 
 const ProjectsGrid = () => {
-  const projectList = [
-    {
-      title: 'String Art Printer',
-      description: 'Innovative mechanical system that creates art using a 3-way pick and place mechanism to stretch and position strings, creating intricate images and patterns through precise string placement.',
-      technologies: ['Mechanical Design', 'Arduino', '3D Printing', 'Image Processing', 'Stepper Motors'],
-      status: 'In Progress',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Linear Actuator System',
-      description: 'Designed and manufactured a precision linear actuator featuring a threaded lead screw and ball bearing mechanism for accurate motion control in automated systems.',
-      technologies: ['Precision Manufacturing', 'CAD Design', 'Motion Control', 'CNC Machining'],
-      status: 'Completed',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Marble Display Machine',
-      description: 'Interactive kinetic sculpture featuring marbles moving along precisely engineered tracks with timing mechanisms, LED matrix integration, and synchronized visual effects.',
-      technologies: ['Kinetic Engineering', 'Arduino', 'LED Programming', 'Mechanical Systems', 'Timing Control'],
-      status: 'In Progress',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Biomedical Materials Lab Research',
-      description: 'Development of novel testing protocols for additively manufactured biomaterials, including batch Bayesian optimization and automated analysis systems achieving 5X speed improvements.',
-      technologies: ['MATLAB', 'Python', 'L-PBF', 'Fatigue Testing', 'Machine Learning'],
-      status: 'In Progress',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Ti6Al4V Fatigue Research',
-      description: 'Comprehensive study on corrosion fatigue behavior of additively manufactured Ti6Al4V alloys, focusing on biomedical applications and surface treatments with published results.',
-      technologies: ['Materials Testing', 'Statistical Analysis', 'SEM Microscopy', 'Research Publication'],
-      status: 'Completed',
-      link: '#',
-      github: '#',
-    },
-    {
-      title: 'Advanced Manufacturing Systems',
-      description: 'Multiple projects including titanium SPF process optimization, ergonomic roller seam welding tools, and CNC programming for miniaturized biomedical components.',
-      technologies: ['Manufacturing Analysis', 'Process Optimization', 'Ergonomic Design', 'CNC Programming'],
-      status: 'Completed',
-      link: '#',
-      github: '#',
-    },
-  ];
+  // Get featured projects from the JSON data
+  const projectList = projectsData.projects.filter(project => project.featured);
 
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>

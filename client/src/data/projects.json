@@ -1,0 +1,98 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "String Art Printer",
+      "description": "Innovative mechanical system that creates art using a 3-way pick and place mechanism to stretch and position strings, creating intricate images and patterns through precise string placement.",
+      "technologies": ["Mechanical Design", "Arduino", "3D Printing", "Image Processing", "Stepper Motors"],
+      "status": "In Progress",
+      "image": "string-art-printer.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": null,
+      "category": "Kinetic Art"
+    },
+    {
+      "id": 2,
+      "title": "Linear Actuator System",
+      "description": "Designed and manufactured a precision linear actuator featuring a threaded lead screw and ball bearing mechanism for accurate motion control in automated systems.",
+      "technologies": ["Precision Manufacturing", "CAD Design", "Motion Control", "CNC Machining"],
+      "status": "Completed",
+      "image": "linear-actuator.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": "2024-03-15",
+      "category": "Mechanical Systems"
+    },
+    {
+      "id": 3,
+      "title": "Marble Display Machine",
+      "description": "Interactive kinetic sculpture featuring marbles moving along precisely engineered tracks with timing mechanisms, LED matrix integration, and synchronized visual effects.",
+      "technologies": ["Kinetic Engineering", "Arduino", "LED Programming", "Mechanical Systems", "Timing Control"],
+      "status": "In Progress",
+      "image": "marble-display.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": null,
+      "category": "Kinetic Art"
+    },
+    {
+      "id": 4,
+      "title": "Biomedical Materials Lab Research",
+      "description": "Development of novel testing protocols for additively manufactured biomaterials, including batch Bayesian optimization and automated analysis systems achieving 5X speed improvements.",
+      "technologies": ["MATLAB", "Python", "L-PBF", "Fatigue Testing", "Machine Learning"],
+      "status": "In Progress",
+      "image": "biomedical-research.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": null,
+      "category": "Research"
+    },
+    {
+      "id": 5,
+      "title": "Ti6Al4V Fatigue Research",
+      "description": "Comprehensive study on corrosion fatigue behavior of additively manufactured Ti6Al4V alloys, focusing on biomedical applications and surface treatments with published results.",
+      "technologies": ["Materials Testing", "Statistical Analysis", "SEM Microscopy", "Research Publication"],
+      "status": "Completed",
+      "image": "titanium-research.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": "2024-01-20",
+      "category": "Research"
+    },
+    {
+      "id": 6,
+      "title": "Advanced Manufacturing Systems",
+      "description": "Multiple projects including titanium SPF process optimization, ergonomic roller seam welding tools, and CNC programming for miniaturized biomedical components.",
+      "technologies": ["Manufacturing Analysis", "Process Optimization", "Ergonomic Design", "CNC Programming"],
+      "status": "Completed",
+      "image": "manufacturing-systems.jpg",
+      "link": "#",
+      "github": "#",
+      "featured": true,
+      "completedDate": "2023-12-10",
+      "category": "Manufacturing"
+    }
+  ],
+  "categories": [
+    "Kinetic Art",
+    "Mechanical Systems",
+    "Research",
+    "Manufacturing",
+    "Software",
+    "Biomedical"
+  ],
+  "statuses": [
+    "Planning",
+    "Design Phase",
+    "In Progress",
+    "Testing",
+    "Completed",
+    "Published"
+  ]
+}

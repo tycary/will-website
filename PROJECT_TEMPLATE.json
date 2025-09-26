@@ -1,0 +1,13 @@
+{
+  "id": 999,
+  "title": "Your Project Title Here",
+  "description": "Write a detailed description of your project. Explain what it does, what problems it solves, and what makes it interesting or innovative.",
+  "technologies": ["Technology 1", "Technology 2", "Technology 3", "Add more as needed"],
+  "status": "In Progress",
+  "image": "your-image-filename.jpg",
+  "link": "#",
+  "github": "#",
+  "featured": true,
+  "completedDate": null,
+  "category": "Choose a category"
+}
