@@ -1,4 +1,4 @@
-# Will Cary - Portfolio Website
+# William (Will) Hogg - Portfolio Website
 
 A modern, responsive portfolio website built with React, Vite, and Material-UI showcasing mechanical engineering projects and skills.
 
@@ -172,7 +172,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙋‍♂️ Contact
 
-Will Cary - [will.cary@example.com](mailto:will.cary@example.com)
+William (Will) Hogg - [WilliamWHogg@gmail.com](mailto:WilliamWHogg@gmail.com)
 
 Project Link: [https://github.com/yourusername/will-website](https://github.com/yourusername/will-website)
 

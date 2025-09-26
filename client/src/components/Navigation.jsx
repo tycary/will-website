@@ -25,7 +25,7 @@ const Navigation = () => {
   const drawer = (
     <Box sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2, fontWeight: 700 }}>
-        Will Cary
+        Will Hogg
       </Typography>
       <List>
         {navItems.map((item) => (
@@ -51,7 +51,7 @@ const Navigation = () => {
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700 }}>
             <Box component={Link} to="/" sx={{ textDecoration: 'none', color: 'inherit' }}>
-              Will Cary
+              Will Hogg
             </Box>
           </Typography>
           

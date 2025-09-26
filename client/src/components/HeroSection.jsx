@@ -31,9 +31,9 @@ const HeroSection = () => {
     >
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
         <Fade in timeout={1000}>
-          <Grid container spacing={4} alignItems="center">
+          <Grid container spacing={4} alignItems="center" justifyContent="center">
             <Grid item xs={12} md={8}>
-              <Box>
+              <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                 <Typography variant="h5" color="primary" sx={{ mb: 2, fontWeight: 600 }}>
                   👋 Hello, I'm
                 </Typography>
@@ -43,11 +43,11 @@ const HeroSection = () => {
                 <Typography variant="h4" color="text.secondary" sx={{ mb: 3, fontWeight: 400 }}>
                   Mechanical Engineer & Creative Problem Solver
                 </Typography>
-                <Typography variant="h6" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8, maxWidth: '600px' }}>
+                <Typography variant="h6" color="text.secondary" sx={{ mb: 4, lineHeight: 1.8, maxWidth: '600px', mx: { xs: 'auto', md: 0 } }}>
                   From kinetic art machines and precision actuators to biomedical research and manufacturing optimization. 
                   I bridge the gap between innovative engineering and practical solutions that make a difference.
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', justifyContent: { xs: 'center', md: 'flex-start' } }}>
                   <Button 
                     variant="contained" 
                     size="large" 

@@ -16,13 +16,13 @@ const Footer = () => {
           }}
         >
           <Typography variant="body2" color="text.secondary">
-            © 2024 Will Cary. All rights reserved.
+            © 2025 William Hogg. All rights reserved.
           </Typography>
           
           <Box sx={{ display: 'flex', gap: 1 }}>
             <IconButton 
               color="inherit" 
-              href="https://github.com/willcary" 
+              href="https://github.com/williamhogg" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -31,7 +31,7 @@ const Footer = () => {
             </IconButton>
             <IconButton 
               color="inherit" 
-              href="https://linkedin.com/in/willcary" 
+              href="https://linkedin.com/in/williamhogg" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
@@ -40,7 +40,7 @@ const Footer = () => {
             </IconButton>
             <IconButton 
               color="inherit" 
-              href="mailto:will@example.com"
+              href="mailto:WilliamWHogg@gmail.com"
               aria-label="Email Contact"
             >
               <Email />
