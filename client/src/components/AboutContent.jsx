@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-  Container, Box, Grid, Typography, Paper, Card, Chip, Fade
+  Container, Box, Grid, Typography, Paper, Card, Chip, Fade, Avatar
 } from '@mui/material';
 import {
   Engineering, Code, Build, School, Science, EmojiEvents
 } from '@mui/icons-material';
+import profileImage from '../assets/profile-will.png';
 
 const SkillsSection = () => {
   const skills = [
@@ -92,9 +93,22 @@ const AboutContent = () => {
         {/* Introduction */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 4, height: '100%', background: 'linear-gradient(135deg, #1a1a1a 0%, #252525 100%)' }}>
-            <Typography variant="h4" gutterBottom sx={{ color: 'primary.main', fontWeight: 600 }}>
-              Hello, I'm William! 👋
-            </Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+              <Avatar
+                src={profileImage}
+                alt="William Hogg"
+                sx={{
+                  width: 80,
+                  height: 80,
+                  mr: 3,
+                  border: '3px solid',
+                  borderColor: 'primary.main',
+                }}
+              />
+              <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 600 }}>
+                Hello, I'm William! 👋
+              </Typography>
+            </Box>
             <Typography paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
               I recently completed my M.S. in Mechanical Engineering at Washington State University with a 4.0 GPA, 
               specializing in additive manufacturing and biomechanical materials research. My work focuses on 

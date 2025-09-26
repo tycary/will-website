@@ -77,7 +77,7 @@ const ContactInfo = () => {
 
   const socialLinks = [
     { icon: <GitHub />, href: 'https://github.com/williamhogg' },
-    { icon: <LinkedIn />, href: 'https://linkedin.com/in/will-hogg' }
+    { icon: <LinkedIn />, href: 'https://www.linkedin.com/in/will-hogg/' }
   ];
 
   return (

@@ -6,6 +6,7 @@ import {
 import {
   KeyboardArrowDown, Rocket, ChevronRight, Engineering, Code, Build
 } from '@mui/icons-material';
+import profileImage from '../assets/profile-will.png';
 
 const HeroSection = () => {
   return (
@@ -74,15 +75,16 @@ const HeroSection = () => {
             <Grid item xs={12} md={4}>
               <Box sx={{ textAlign: 'center' }}>
                 <Avatar
+                  src={profileImage}
+                  alt="William Hogg - Mechanical Engineer"
                   sx={{
                     width: 280,
                     height: 280,
                     mx: 'auto',
                     mb: 2,
-                    background: 'linear-gradient(45deg, #c53030, #8b959c)',
-                    fontSize: '4rem',
-                    fontWeight: 700,
                     boxShadow: '0px 12px 40px rgba(197, 48, 48, 0.3)',
+                    border: '4px solid',
+                    borderColor: 'primary.main',
                   }}
                 >
                   WH
